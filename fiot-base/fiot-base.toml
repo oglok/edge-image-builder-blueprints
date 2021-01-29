@@ -1,0 +1,28 @@
+name = "fiot-base"
+description = ""
+version = "0.0.3"
+modules = []
+groups = []
+
+[[packages]]
+name = "cri-o"
+version = "*"
+
+[[packages]]
+name = "cri-tools"
+version = "*"
+
+[[packages]]
+name = "kubectl"
+version = "*"
+
+[[packages]]
+name = "kubelet"
+version = "*"
+
+[customizations]
+
+[[customizations.user]]
+name = "redhat"
+password = "$6$.B8NW5E18HKws8li$cXFQd0RjFcqwEb4.SWelim8dAZYAy3Kya8a5kd7cs/m83tWiPu0oKtigQoEvu.TzKCHWFHMBeRBwAVWpDMAf.0"
+groups = ["wheel"]
